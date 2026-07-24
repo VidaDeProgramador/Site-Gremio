@@ -17,7 +17,7 @@
         <nav class="nav">
             <div class="itens">
                 <ul>
-                    <li class="menu-itens active">
+                    <li class="menu-itens">
                         <a href="#home">
                             <span class="icon"><i class="bi bi-house"></i></span>
                             <span class="txt-link">Início</span>
@@ -39,22 +39,31 @@
             </div>
         </nav>
 
-        <div class="header">
-            <header class="header-content" id="home">
+        <div class="main-container">
+            <header class="header-content">
                 <div class="logo">
-                    <img style="width: 6rem;" src="images/logo-alcatec.png" alt="Logo">
+                    <img src="images/logo-alcatec.png" alt="Logo">
                     <p>Alcatec</p>
                 </div>
             </header>
 
             <main class="main">
                 <div class="interface">
-                    <section class="page1">
-                        <div class="grid-layout">
+                    <section class="page1" id="home">
+                        <div class="page1-layout">
                             <div class="column a1">
-                                <p>Coluna 01</p>
+                                <div class="a1-content">
+                                    <h1>Somos a Alcatec &#x1F43A</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laborum modi veritatis suscipit et voluptates at? Libero laudantium molestias debitis modi non, magni vitae quisquam porro est quas quibusdam animi?</p>
+                                </div>
+                                <div class="a1-image">
+                                    <img src="images/logo-alcatec.png" alt="Logo">
+                                </div>
                             </div>
-                            <div class="column a2">Coluna 02</div>
+                            <div class="column a2">
+                                <h1>O que é Grêmio Estudantil?</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero autem reiciendis, aspernatur dolor quo illo amet fugiat minima nobis sit nesciunt iure iste saepe harum ipsa voluptates ex itaque. Dignissimos.</p>
+                            </div>
                             <div class="column a3">Coluna 03</div>
                             <div class="column a4">Coluna 04</div>
                         </div>
@@ -70,7 +79,21 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
+
+<!-- CSS Estilo 
+
+.page1 .a1 {
+    max-width: 280px;
+    grid-column: span 3;
+}
+
+.page1-layout {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+-->
